@@ -5,7 +5,6 @@ simple text encryping application
 
 wriiten in GCC C++
 
-to run open terminal here and run <code>./master </code>
     
 # note :this is a simple encrypter anyone with source code could simply decrypt it !
 
