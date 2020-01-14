@@ -2,7 +2,7 @@
 /* project name :text encrypter[N-crypter]
  * author		:Nived.R.S
  * date created	:08/01/2020
- * date updated	:13/01/2020
+ * date updated	:14/01/2020
  * version		:0.0.1.1 alpha
  * */
 //-----------------------------------------------------------------------------------------------
