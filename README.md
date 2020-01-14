@@ -1,5 +1,7 @@
 #  ncrypter
 ---
+![demo](https://imgur.com/1eXpshJ.gif)
+
 N-Crypter v-0.0.1.0 alpha
 
 simple text encryping application
