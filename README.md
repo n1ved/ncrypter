@@ -14,17 +14,17 @@ wriiten in GCC C++
 this is a fun project , sorry for bugs 
 ### Running
 ---
-just open the terminal in this folder and run ```python start.py```
+just open the terminal in this folder and run ```$ python start.py```
 
 ### Prerequsties
 ---
 * g++ 
 
 ..*  install this by 
-```sudo apt-get install g++ ```
+```$ sudo apt-get install g++ ```
 * python
 ..* install by
-```sudo apt-get install python```
+```$ sudo apt-get install python```
 
 ## usage notes
   * do not use whitespace instead please use underscores
