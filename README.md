@@ -1,6 +1,6 @@
 #  ncrypter
 ---
-![demo](https://imgur.com/1eXpshJ.gif)
+![demo](demo-2020-01-17_224732.gif)
 
 N-Crypter v-0.0.1.0 alpha
 
