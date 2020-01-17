@@ -12,6 +12,9 @@ wriiten in GCC C++
 > note :this is a simple encrypter anyone with source code could simply decrypt it !
 
 this is a fun project , sorry for bugs 
+### running
+---
+just open the terminal in this folder and run ```python start.py```
 
 ###prerequsties
 ---
@@ -19,7 +22,9 @@ this is a fun project , sorry for bugs
 
 ..*  install this by 
 ```sudo apt-get install g++ ```
-
+* python
+..* install by
+```sudo apt-get install python```
 
 ## usage notes
   * do not use whitespace instead please use underscores
