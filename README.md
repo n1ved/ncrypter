@@ -12,11 +12,11 @@ wriiten in GCC C++
 > note :this is a simple encrypter anyone with source code could simply decrypt it !
 
 this is a fun project , sorry for bugs 
-### running
+### Running
 ---
 just open the terminal in this folder and run ```python start.py```
 
-###prerequsties
+### Prerequsties
 ---
 * g++ 
 
