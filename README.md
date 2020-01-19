@@ -18,10 +18,10 @@ just open the terminal in this folder and run ```$ python start.py```
 
 ### Prerequsties
 ---
-* g++ 
+> g++ 
 -  install this by 
 ```$ sudo apt-get install g++ ```
-* python
+> python
 - install by
 ```$ sudo apt-get install python```
 
