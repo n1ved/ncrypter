@@ -1,6 +1,12 @@
 ### [main issues to be fixed]
 
     [ ] programs stops while handling whitespaces
+	
+### [version 0.2.1 alpha [24/01/2020]]
+    
+    [x]replaced '_' by '-' for easly typing
+	[x]minor UI fixes
+	
 
 ## [version 0.2 alpha [17/01/2020]]
 

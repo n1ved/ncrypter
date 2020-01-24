@@ -1,9 +1,9 @@
 //cpp/fun/1
 /* project name :text encrypter[N-crypter]
- * author		:Nived.R.S
+ * @author		:Nived.R.S
  * date created	:08/01/2020
  * date updated	:13/01/2020
- * version		:0.2 alpha
+ * @version		:0.2
  * */
 //-----------------------------------------------------------------------------------------------
 
@@ -13,7 +13,7 @@ int main()
 {		cout<<"\t\t**************************************************************************\n";
 		cout<<"\v\t\t\t\t encrypter v-0.0.1.1 alpha \n\n";
 		cout<<"\t\t**************************************************************************\n";
-		char str[30],en[30];
+		char str[250],en[250];
 		int i,opt,exit;
 //----------------------------option for encrypt decrypt or exit-----------------------------------
 		cout<<"\v\t\t\t\t--------------Select a option----------------\n";
@@ -24,11 +24,11 @@ int main()
 		cin>>opt;
 		
 //--------------------------------------------------------------------------------------------------------
+//---------------------------------encryption wizard------------------------------------------------------
 	if(opt==1){
 		cout<<"\n\nenter the string to be encypted :";
 		cin>>str;
-		cout<<"\t\t\n ==========================================================\n";
-		cout<<"\n\t\t\tencrypted text is : ";
+		cout<<"\n\t\t\t\tencrypted text is : ";
 		
 		for(i=0;i<30;i++)
 		{	
@@ -112,11 +112,10 @@ int main()
 					case 'z' :	en[i]='a';
 								cout<<en[i];
 								break;
-					case '_' :	en[i]='_';
+					case '-' :	en[i]='-';
 								cout<<en[i];
 								break;
-					case '\0':	cout<<" \t \t\n ==========================================================\n";
-								cout<<"\n";
+					case '\0':	cout<<"\n";
 								cout<<"Do you want to Quit the Program ? \n";
 								cout<<"choose [yes=1 , no=0] :";
 								cin>>exit;
@@ -125,18 +124,16 @@ int main()
 								break;
 							
 					default:cout<<"invalid charecter !";
-							cout<<"\n \t \t==========================================================\n";
 									return main();
 									
 				}
 				
 		}
 	}
-	
+	//----------------------------------decryption wizard---------------------------------------------
 	else if (opt==2){
 		cout<<"enter the string to be decypted :";
 		cin>>str;
-		cout<<"\t\t\n ==========================================================\n";
 		cout<<"\n\t\t\tdecrypted text is : ";
 		
 		for(i=0;i<30;i++)
@@ -221,11 +218,10 @@ int main()
 					case 'a' :	en[i]='z';
 								cout<<en[i];
 								break;
-					case '_' :	en[i]='_';
+					case '-' :	en[i]='-';
 								cout<<en[i];
 								break;
-					case '\0':	cout<<" \t \t\n ==========================================================\n";
-								cout<<"\n";
+					case '\0':	cout<<"\n";
 								cout<<"Do you want to Quit the Program ? \n";
 								cout<<"choose [yes=1 , no=0] :";
 								cin>>exit;
@@ -234,7 +230,6 @@ int main()
 								break;
 							
 					default:cout<<"invalid charecter !";
-							cout<<"\n \t \t==========================================================\n";
 									return main();
 									
 				}
@@ -246,9 +241,11 @@ int main()
 		if (exit==1){return 0;}
 		else if (exit==0){return main();}
 	}
+	//-------------------------------exit----------------------------------
 	else if (opt==0){return 0;}
+	//---------------------------------------------------------------------
 	else {cout<<"wrong input ......!";
 		return main();}
-	
+	//--------------------------------------------------------------------
 		return 0;
 }

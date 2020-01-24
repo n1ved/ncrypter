@@ -26,5 +26,5 @@ just open the terminal in this folder and run ```$ python start.py```
 ```$ sudo apt-get install python```
 
 ## usage notes
-  * do not use whitespace instead please use underscores
+  * do not use whitespace instead please use hyphone (-)
   * text limit is 30 charecters 
