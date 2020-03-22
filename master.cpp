@@ -1,251 +1,81 @@
-//cpp/fun/1
-/* project name :text encrypter[N-crypter]
- * @author		:Nived.R.S
- * date created	:08/01/2020
- * date updated	:13/01/2020
- * @version		:0.2.1
- * */
-//-----------------------------------------------------------------------------------------------
-
 #include <iostream>
+#include <cstring>
+#include <cstdio>
 using namespace std;
-int main()
-{		cout<<"\t\t**************************************************************************\n";
-		cout<<"\v\t\t\t\t encrypter v-0.2.1 alpha \n\n";
-		cout<<"\t\t**************************************************************************\n";
-		char str[250],en[250];
-		int i,opt,exit;
-//----------------------------option for encrypt decrypt or exit-----------------------------------
-		cout<<"\v\t\t\t\t--------------Select a option----------------\n";
-		cout<<"\t\t\t\t\t [1] encrypt\n";
-		cout<<"\t\t\t\t\t [2] decrypt\n";
-		cout<<"\t\t\t\t\t [0] exit\n";
-		cout<<"\n\n\t\t\t\t\t choose an option >>>";
-		cin>>opt;
-		
-//--------------------------------------------------------------------------------------------------------
-//---------------------------------encryption wizard------------------------------------------------------
-	if(opt==1){
-		cout<<"\n\nenter the string to be encypted :";
-		cin>>str;
-		cout<<"\n\t\t\t\tencrypted text is : ";
-		
-		for(i=0;i<30;i++)
-		{	
-			switch(str[i])
-				{
-					case 'a' :	en[i]='q';
-								cout<<en[i];
-								break;							
-					case 'b' :	en[i]='g';
-								cout<<en[i];
-								break;							
-					case 'c' :	en[i]='d';
-								cout<<en[i];
-								break;						
-					case 'd' :	en[i]='e';
-								cout<<en[i];
-								break;								
-					case 'e' :	en[i]='c';
-								cout<<en[i];
-								break;								
-					case 'f' :	en[i]='r';
-								cout<<en[i];
-								break;								
-					case 'g' :	en[i]='t';
-								cout<<en[i];
-								break;
-					case 'h' :	en[i]='y';
-								cout<<en[i];
-								break;
-					case 'i' :	en[i]=',';
-								cout<<en[i];
-								break;			
-					case 'j' :	en[i]='u';
-								cout<<en[i];
-								break;
-					case 'k' :	en[i]='i';
-								cout<<en[i];
-								break;
-					case 'l' :	en[i]='o';
-								cout<<en[i];
-								break;
-					case 'm' :	en[i]='j';
-								cout<<en[i];
-								break;
-					case 'n' :	en[i]='h';
-								cout<<en[i];
-								break;
-					case 'o' :	en[i]='.';
-								cout<<en[i];
-								break;
-					case 'p' :	en[i]='/';
-								cout<<en[i];
-								break;
-					case 'q' :	en[i]='z';
-								cout<<en[i];
-								break;
-					case 'r' :	en[i]='v';
-								cout<<en[i];
-								break;
-					case 's' :	en[i]='w';
-								cout<<en[i];
-								break;
-					case 't' :	en[i]='b';
-								cout<<en[i];
-								break;
-					case 'u' :	en[i]='m';
-								cout<<en[i];
-								break;
-					case 'v' :	en[i]='f';
-								cout<<en[i];
-								break;
-					case 'w' :	en[i]='x';
-								cout<<en[i];
-								break;
-					case 'x' :	en[i]='s';
-								cout<<en[i];
-								break;
-					case 'y' :	en[i]='n';
-								cout<<en[i];
-								break;
-					case 'z' :	en[i]='a';
-								cout<<en[i];
-								break;
-					case '-' :	en[i]='-';
-								cout<<en[i];
-								break;
-					case '\0':	cout<<"\n";
-								cout<<"Do you want to Quit the Program ? \n";
-								cout<<"choose [yes=1 , no=0] :";
-								cin>>exit;
-								if (exit==1){return 0;}
-								else if (exit==0){return main();}
-								break;
-							
-					default:cout<<"invalid charecter !";
-									return main();
-									
-				}
-				
+//-----------------function declaration--------------------------
+void encrypt();
+void decrypt();
+
+
+//----------------global variable declaration--------------------
+char str[30];//string for input and output
+int i/*for for loop*/,num=0/*for ASCII converition*/;
+
+
+int main() {
+  int opt;
+  cout<<"\t\t\t\t ---------Choose a option--------\n "
+      <<"\t\t\t\t\t  [1]Encrypt\n"
+      <<"\t\t\t\t\t  [2]Decrypt\n"
+      <<"\t\t\t\t\t  [0]Exit\n"
+      <<"\t\t\t\t\t     OPTION >>> ";
+ cin>>opt;
+if (opt==1)
+      encrypt();
+else if (opt==2)
+      decrypt();
+else if (opt==0)
+      exit(0);
+else {
+    cout<<"Invalid option please try again !!!";
+    main();}
+  return 0;
+}
+
+
+void encrypt(){  //encrypt function
+    cout<<"Enter text to Encrypt : ";
+
+		for (i=0;i<250;i++)
+		{
+			str[i]=getchar();
+			if (i !=0 && str[i] == '\n')
+					break;
 		}
+
+	  for(i=0;i<250;i++){
+      //-----------------
+      if (str[i]=='\0')
+          break;
+   //-----------------
+      num=str[i]; //letter to ASCII
+      num=num+1; //converting to next charecter
+      str[i]=num;//ASCII to letter
+      cout<<str[i];//print new letter
+  //-------------------
+    }
+	main();
+}
+
+
+void decrypt(){//decrypt function same as encrypt
+  cout<<"Enter text to Decrypt : ";
+	for (i=0;i<250;i++)
+	{
+		str[i]=getchar();
+		if (i !=0 && str[i] == '\n')
+				break;
 	}
-	//----------------------------------decryption wizard---------------------------------------------
-	else if (opt==2){
-		cout<<"enter the string to be decypted :";
-		cin>>str;
-		cout<<"\n\t\t\tdecrypted text is : ";
-		
-		for(i=0;i<30;i++)
-		{	
-			switch(str[i])
-				{
-					case 'q' :	en[i]='a';
-								cout<<en[i];
-								break;							
-					case 'g' :	en[i]='b';
-								cout<<en[i];
-								break;							
-					case 'd' :	en[i]='c';
-								cout<<en[i];
-								break;						
-					case 'e' :	en[i]='d';
-								cout<<en[i];
-								break;								
-					case 'c' :	en[i]='e';
-								cout<<en[i];
-								break;								
-					case 'r' :	en[i]='f';
-								cout<<en[i];
-								break;								
-					case 't' :	en[i]='g';
-								cout<<en[i];
-								break;
-					case 'y' :	en[i]='h';
-								cout<<en[i];
-								break;
-					case ',' :	en[i]='i';
-								cout<<en[i];
-								break;			
-					case 'u' :	en[i]='j';
-								cout<<en[i];
-								break;
-					case 'i' :	en[i]='k';
-								cout<<en[i];
-								break;
-					case 'o' :	en[i]='l';
-								cout<<en[i];
-								break;
-					case 'j' :	en[i]='m';
-								cout<<en[i];
-								break;
-					case 'h' :	en[i]='n';
-								cout<<en[i];
-								break;
-					case '.' :	en[i]='o';
-								cout<<en[i];
-								break;
-					case '/' :	en[i]='p';
-								cout<<en[i];
-								break;
-					case 'z' :	en[i]='q';
-								cout<<en[i];
-								break;
-					case 'v' :	en[i]='r';
-								cout<<en[i];
-								break;
-					case 'w' :	en[i]='s';
-								cout<<en[i];
-								break;
-					case 'b' :	en[i]='t';
-								cout<<en[i];
-								break;
-					case 'm' :	en[i]='u';
-								cout<<en[i];
-								break;
-					case 'f' :	en[i]='v';
-								cout<<en[i];
-								break;
-					case 'x' :	en[i]='w';
-								cout<<en[i];
-								break;
-					case 's' :	en[i]='x';
-								cout<<en[i];
-								break;
-					case 'n' :	en[i]='y';
-								cout<<en[i];
-								break;
-					case 'a' :	en[i]='z';
-								cout<<en[i];
-								break;
-					case '-' :	en[i]='-';
-								cout<<en[i];
-								break;
-					case '\0':	cout<<"\n";
-								cout<<"Do you want to Quit the Program ? \n";
-								cout<<"choose [yes=1 , no=0] :";
-								cin>>exit;
-								if (exit==1){return 0;}
-								else if (exit==0){return main();}
-								break;
-							
-					default:cout<<"invalid charecter !";
-									return main();
-									
-				}
-				
-		}
-		cout<<"Do you want to Quit the Program ? \n";
-		cout<<"choose [yes=1 , no=0] :";
-		cin>>exit;
-		if (exit==1){return 0;}
-		else if (exit==0){return main();}
-	}
-	//-------------------------------exit----------------------------------
-	else if (opt==0){return 0;}
-	//---------------------------------------------------------------------
-	else {cout<<"wrong input ......!";
-		return main();}
-	//--------------------------------------------------------------------
-		return 0;
+  for(i=0;i<250;i++){
+
+		if (str[i]=='\0')
+				break;
+
+    num=str[i];
+    num=num-1;
+    str[i]=num;
+    cout<<str[i];
+//-------------------
+  }
+	main();
 }
