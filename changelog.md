@@ -1,6 +1,6 @@
 ### [main issues to be fixed]
 
-    ~~-[x] programs stops while handling whitespaces~~
+    no known issue
 	
 ## [version 0.2.2 alpha [22/03/2020]]
     -[x]white space problem fixed
