@@ -1,8 +1,8 @@
 #  ncrypter
 ---
-![demo](demo-2020-01-17_224732.gif)
+![demo](demo-new.gif)
 
-N-Crypter v-0.0.1.0 alpha
+N-Crypter v-0.2.2 alpha
 
 simple text encryping application
 
@@ -26,5 +26,4 @@ just open the terminal in this folder and run ```$ python start.py```
 ```$ sudo apt-get install python```
 
 ## usage notes
-  * do not use whitespace instead please use hyphen (-)
-  * text limit is 150 charecters 
+  * text limit is 250 charecters 
