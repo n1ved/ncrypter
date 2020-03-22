@@ -5,6 +5,7 @@
 # [version 0.2.2 alpha [22/03/2020]]
     -[x]white space problem fixed
     -[x]minor UI changes
+    -[x]new algorithm
 ## [version 0.2.1 alpha [24/01/2020]]
     
     -[x]replaced '_' by '-' for easly typing
