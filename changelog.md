@@ -1,8 +1,8 @@
-### [main issues to be fixed]
+# [main issues to be fixed]
 
     no known issue
 	
-## [version 0.2.2 alpha [22/03/2020]]
+# [version 0.2.2 alpha [22/03/2020]]
     -[x]white space problem fixed
     -[x]minor UI changes
 ## [version 0.2.1 alpha [24/01/2020]]
@@ -12,7 +12,7 @@
     -[x]changed text limit to 250
 	
 
-## [version 0.2 alpha [17/01/2020]]
+### [version 0.2 alpha [17/01/2020]]
 
     -[x] used a python file for handling compilation ,building and running the program
     -[x] moved everything from N-crypter folder to master
