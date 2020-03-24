@@ -2,7 +2,7 @@
 ---
 ![demo](demo-new.gif)
 
-N-Crypter v-0.2.2 alpha
+N-Crypter v-1.0 stable
 
 simple text encryping application
 
