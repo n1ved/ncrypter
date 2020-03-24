@@ -1,8 +1,13 @@
 ### [main issues to be fixed]
 
     no known issue
+   
+#  [version 1.0 stable [24/03/2020]]
+    -[x]fixed all known bugs
+    -[x]changes in algorithm
+    -[x]minor UI changes
 	
-# [version 0.2.2 alpha [22/03/2020]]
+## [version 0.2.2 alpha [22/03/2020]]
     -[x]white space problem fixed
     -[x]minor UI changes
     -[x]new algorithm
