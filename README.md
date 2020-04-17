@@ -27,7 +27,7 @@ $ python start.py
 
 this program simply change every text to its ASCII value and change that ASCII value and reconverting to Text
 
-```
+```cpp
 for(i=1;i<(ConvLimit-1);i++){
 
  if (str[i]=='\0')//used for removing occational segmentation faults
