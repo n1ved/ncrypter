@@ -61,6 +61,3 @@ for(i=1;i<(ConvLimit-1);i++){
 the decryption is also work in almost same way the only change is while encryption
 convert the charecter to next ones decrytion converts it to previous one
 
-## usage notes
-  * do not use whitespace instead please use hyphen (-)
-  * text limit is 150 charecters
