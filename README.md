@@ -11,7 +11,7 @@ wriiten in GCC C++
 this is a fun project , sorry for bugs
 ### installation
 ---
-```
+```bash
 $ git clone https://github.com/n1ved/ncrypter.git
 $ cd ncrypter
 $ python start.py
