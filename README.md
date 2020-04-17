@@ -1,6 +1,6 @@
 #  ncrypter
 ---
-![demo](demo-2020-01-17_224732.gif)
+![demo](demo-new.gif)
 
 N-Crypter is simple standalone Text encryption/decryption tool
 wriiten in GCC C++
@@ -20,7 +20,7 @@ $ python start.py
 
 ### Prerequsties
 ---
-> g++
+> g++ &
 > python
 
 ### How this works
