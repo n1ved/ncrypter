@@ -21,7 +21,7 @@ $ python start.py
 ### Prerequsties
 ---
 > g++ &
-> python
+> python(optional)
 
 ### How this works
 
