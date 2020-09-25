@@ -2,7 +2,7 @@
 ---
 ![demo](demo-new.gif)
 
-N-Crypter is simple standalone Text encryption/decryption tool
+nCrypter is simple standalone Text encryption/decryption tool
 wriiten in GCC C++
 
 
@@ -17,7 +17,7 @@ $ cd ncrypter
 $ sudo python3 install.py 
 
 ```
-### Excicution
+### Execution
 ---
 ```bash
 $ ncrypter
