@@ -1,4 +1,4 @@
-#  ncrypter
+#  nCrypter
 ---
 ![demo](demo-new.gif)
 
