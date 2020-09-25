@@ -7,17 +7,27 @@ wriiten in GCC C++
 
 
 > note :this is a simple encrypter anyone with source code could simply decrypt it !
-
 this is a fun project , sorry for bugs
+
 ### installation
 ---
 ```bash
 $ git clone https://github.com/n1ved/ncrypter.git
 $ cd ncrypter
-$ python start.py
+$ sudo python3 install.py 
 
 ```
+### Excicution
+---
+```bash
+$ ncrypter
 
+```
+###   [version 1.1 [25/09/2020]
+    - [x]New installer script ! installs the program as linux command ( just copying binary file to /bin/ :D )
+    - [x]Removed start.py (Replaced by install.py)
+    
+    
 ### Prerequsties
 ---
 > g++ &

@@ -1,8 +1,13 @@
 ### [main issues to be fixed]
 
     no known issue
+
+###   [version 1.1 [25/09/2020]
+    - [x]New installer script ! installs the program as linux command ( just copying binary file to /bin/ :D )
+    - [x]Removed start.py (Replaced by install.py)
+    
    
-#  [version 1.0 stable [24/03/2020]]
+##  [version 1.0 stable [24/03/2020]]
     - [x]fixed all known bugs
     - [x]changes in algorithm
     - [x]minor UI changes

@@ -1,16 +1,12 @@
-/*
-program closed  : 24/03/2020 tuesday IST 20:31
-github link     : github.com/SP3CTRE9886/ncrypter
-coded with      :c++
-auothor         :Nived.R.S
-*/
 #include <iostream>
+#include <cstdlib>
 #include <cstring>
 #include <cstdio>
 using namespace std;
 //-----------------function declaration--------------------------
 void encrypt();
 void decrypt();
+void banner();
 
 
 //----------------global variable declaration--------------------
@@ -22,18 +18,21 @@ int key;
 //----------------main program------------------
 int main() {
   int opt;
-  cout<<"\t\t\t\t ---------Choose a option--------\n "
-      <<"\t\t\t\t\t  [1]Encrypt\n"
-      <<"\t\t\t\t\t  [2]Decrypt\n"
-      <<"\t\t\t\t\t  [0]Exit\n"
-      <<"\n\t\t\t\t\t  OPTION >>> ";
+  banner();
+  cout<<"\t\t\t ---------Choose an option--------\n "
+      <<"\t\t\t\t  [1]Encrypt\n"
+      <<"\t\t\t\t  [2]Decrypt\n"
+      <<"\t\t\t\t  [0]Exit\n"
+      <<"\n\t\t\t\t  OPTION >>> ";
   cin>>opt;
   if (opt==1)
       encrypt();
   else if (opt==2)
       decrypt();
-  else if (opt==0)
+  else if (opt==0){
+      system("clear");
       exit(0);
+            }
   else {
       cout<<"\t\t\t\t\tInvalid option please try again !!!";
       main();}
@@ -122,4 +121,20 @@ void decrypt(){//decrypt function same as encrypt
   }
     cout<<endl<<'\a';
 	main();
+}
+
+// ---------------------------Welcome banner------------------------------------ 
+
+void banner(){
+    cout<<"\t                                                             \n"
+        <<"\t                                                             \n"
+    	<<"\t	             _____                  _                     \n"
+        <<"\t                    / ____|                | |               \n"
+        <<"\t              _ __ | |     _ __ _   _ _ __ | |_ ___ _ __     \n"
+        <<"\t             | '_ \\| |    | '__| | | | '_ \\| __/ _ \\ '__| \n"
+        <<"\t             | | | | |____| |  | |_| | |_) | ||  __/ |       \n"
+        <<"\t             |_| |_|\\_____|_|   \\__, | .__/ \\__\\___|_|   \n"
+        <<"\t                                 __/ | |                     \n"
+        <<"\t                                |___/|_| v1.1                \n"
+        <<"\t                                                             \n"; 
 }
