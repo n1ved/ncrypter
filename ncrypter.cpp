@@ -11,7 +11,7 @@ void banner();
 
 //----------------global variable declaration--------------------
 char str[30];//string for input and output
-int i/*for for loop*/,num=0/*for ASCII converition*/;
+int i,num=0;
 int ConvLimit=0;
 int key;
 
@@ -91,7 +91,6 @@ void decrypt(){//decrypt function same as encrypt
 				break;
 	}
     ConvLimit = strlen(str);
-    //cout<<ConvLimit;  //--DEBUG PURPOSE
     str[ConvLimit]='\0';
     str[ConvLimit-1]='\0';
     str[0]='\0';

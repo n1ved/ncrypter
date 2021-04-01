@@ -22,7 +22,7 @@ def banner():
 def install():
     banner()
     print('''                         Installing .... ''')
-    os.system("sudo g++ -Wall -o '/bin/ncrypter' master.cpp ")
+    os.system("sudo g++ -Wall -o '/bin/ncrypter' ncrypter.cpp ")
     clrscr()
     print("Installation Complete ! Exiting ....")
     clrscr()
@@ -44,28 +44,13 @@ def remove():
 def run():
     banner()
     print('''               Setting Up...               ''')
-    os.system("g++ -Wall -o master master.cpp")
+    os.system("g++ -Wall -o ncr_tmp_bin  ncrypter.cpp")
     clrscr()
-    os.system("./master")
+    os.system("./ncr_tmp_bin")
+    os.system("rm ncr_tmp_bin")
     
 def main():
-    print('''
-
-
-			     _____                  _
-                            / ____|                | |
-                      _ __ | |     _ __ _   _ _ __ | |_ ___ _ __
-                     | '_ \| |    | '__| | | | '_ \| __/ _ \ '__|
-                     | | | | |____| |  | |_| | |_) | ||  __/ |
-                     |_| |_|\_____|_|   \__, | .__/ \__\___|_|
-                                         __/ | |
-                                        |___/|_|   v1.1 ''')
-    print('''      
-                   nCrypter  Copyright (C) 2019-2020  Nived R S
-		   This program comes with ABSOLUTELY NO WARRANTY.
-		   this is free software, and you are welcome to redistribute it
-		   under certain conditions ''')
-        
+    banner()      
     print('''                        
                                  1 . Install
                                  2 . Uninstall
@@ -85,7 +70,6 @@ def main():
     else:
         print("Invalid Option try again !")
         main()
-
     print("\t\t\t\tThank You !")
     print("\t\t\t\t Press ENTER to exit ")
     b=input()
