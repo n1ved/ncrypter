@@ -1,6 +1,3 @@
-#install.py
-#author:n1ved (github.com/n1ved)
-
 import os
 import time
 def clrscr():
