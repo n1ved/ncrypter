@@ -2,8 +2,7 @@
 ---
 ![demo](demo-new.gif)
 
-nCrypter is simple standalone Text encryption/decryption tool
-wriiten in GCC C++
+nCrypter is simple standalone Text cyphering tool wriiten in GCC C++
 
 
 > note :this is a simple encrypter anyone with source code could simply decrypt it !
